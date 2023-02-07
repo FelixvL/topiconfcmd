@@ -19,5 +19,8 @@ public class Main {
 		voedsel.start();
 		EvenementPlanner evenementPlanner = new EvenementPlanner();
 		evenementPlanner.start();
+
+		bar.takeOrder(student);
+
 	}
 }
