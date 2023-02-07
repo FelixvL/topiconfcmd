@@ -7,13 +7,13 @@ public class Spreker {
 	
 	void start(){
 		System.out.println("Spreker start() is aangeroepen.");
-		test();
+//		test();
 		Voedsel macaroni = new Voedsel();
 		macaroni.eetVoedsel();
 	}
 	
 	void vult() {
-		System.out.println("\nSpreker heeft gegeten en zijn maag is nu gevuld.\n");
+		System.out.println("Spreker heeft gegeten en zijn maag is nu gevuld.\n");
 	}
 	
 	void test() {
@@ -28,5 +28,13 @@ public class Spreker {
 	public void printInfo() {
 		System.out.println("Deze spreker heet: " + firstName + " " + lastName);
 		System.out.println("Hij/Zij spreekt de volgende taal: " + language);
+	}
+	
+	public void openingSpeech() {
+		System.out.println("\n*Ahem*");
+		System.out.println("Welkom allemaal bij een nieuwe editie van TopiConf!");
+		System.out.println("We hopen dat jullie veel zullen opsteken van besproken onderwerpen en dat het inspiratie opwekt.");
+		System.out.println("Mocht je nog vragen hebben, kan je deze altijd stellen bij het informatiepunt.");
+		System.out.println("Heel veel plezier allemaal!");
 	}
 }
