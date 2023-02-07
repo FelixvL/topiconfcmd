@@ -1,9 +1,9 @@
 package topiconfcmd;
 
 public class Medewerker {
-		public String naam;
-		public String achternaam;
-		public String leeftijd;
+		public String naam = "Egbert";
+		public String achternaam = "Willemsen";
+		public int leeftijd = 55;
 		public boolean heeftVakantie;
 		public String afdeling;
 		public boolean helpEenIngezakteTent = false;
@@ -32,11 +32,11 @@ public class Medewerker {
 			this.achternaam = achternaam;
 		}
 
-		public String getLeeftijd() {
+		public int getLeeftijd() {
 			return leeftijd;
 		}
 
-		public void setLeeftijd(String leeftijd) {
+		public void setLeeftijd(int leeftijd) {
 			this.leeftijd = leeftijd;
 		}
 
