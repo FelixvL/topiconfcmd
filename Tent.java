@@ -20,7 +20,7 @@ public class Tent {
 
 	
 	public void tentIsIngezakt() {
-		Medewerker.setHelpEenIngezakteTent(true);
+		new Medewerker().setHelpEenIngezakteTent(true);
 			System.out.println(name + " is ingezakt");
 	}
 }
