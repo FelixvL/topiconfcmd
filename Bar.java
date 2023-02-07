@@ -1,15 +1,24 @@
 package topiconfcmd;
 
+import java.util.Scanner;
+
 public class Bar {
     private StringBuilder keuzeMenu = new StringBuilder();
+    private String beer;
+
+    public double getBierPrice() {
+        return bierPrice;
+    }
+
+    private final double bierPrice = 2.50;
 
     public void start() {
         this.keuzeMenu();
     }
 
     private void keuzeMenu() {
-        keuzeMenu.append("Hallo, kan ik u iets te drinken inschenken?\n");
-        keuzeMenu.append("U mag keizen uit:\n");
+        keuzeMenu.append("Hoi wat mag het zijn?\n");
+        keuzeMenu.append("Je mag keizen uit:\n");
         keuzeMenu.append("1. Cola\n");
         keuzeMenu.append("2. Fanta\n");
         keuzeMenu.append("3. Cassis\n");
@@ -20,5 +29,16 @@ public class Bar {
         keuzeMenu.append("8. Pina Colada\n");
         keuzeMenu.append("9. Bailys\n");
         keuzeMenu.append("10. water");
+
+
+    }
+
+    public void takeOrder(Student student) {
+        if (student.getIsDrunk()) {
+            System.out.println("Sorry, lijkt mij niet verstandig, jij hebt al genoeg gedronken");
+        } else {
+            System.out.println("Jij bent nog niet dronken dus jij mag nog el een biertje");
+            student.orderDrink(this);
+        }
     }
 }
