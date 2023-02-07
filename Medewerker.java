@@ -9,6 +9,12 @@ public class Medewerker {
 		public boolean heeftVakantie = false;
 		public boolean helpEenIngezakteTent = false;
 		
+		Medewerker(){
+			this.naam = "John";
+			this.achternaam = "Doe";
+			this.leeftijd = 28;
+		}
+		
 		Medewerker(String naam, String achternaam, int leeftijd) {
 			this.naam = naam;
 			this.achternaam = achternaam;
