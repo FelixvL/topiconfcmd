@@ -9,7 +9,7 @@ public class Main {
 		spreker.start();
 		Bezoeker bezoeker = new Bezoeker();
 		bezoeker.start();
-		Student student = new Student();
+		Student student = new Student(true);
 		student.start();
 		Bar bar = new Bar();
 		bar.start();
