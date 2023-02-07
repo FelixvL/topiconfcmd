@@ -38,7 +38,7 @@ public class Bar {
             System.out.println("Sorry, lijkt mij niet verstandig, jij hebt al genoeg gedronken");
         } else {
             System.out.println("Jij bent nog niet dronken dus jij mag nog el een biertje");
-            student.orderDrink(this);
+            student.OrderDrink(this);
         }
     }
 }
