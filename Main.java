@@ -13,7 +13,7 @@ public class Main {
 		student.start();
 		Bar bar = new Bar();
 		bar.start();
-		Medewerker medewerker = new Medewerker();
+		Medewerker medewerker = new Medewerker("Egebert","Willemsen", 55);
 		medewerker.start();
 		Voedsel voedsel = new Voedsel();
 		voedsel.start();
