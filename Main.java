@@ -11,8 +11,8 @@ public class Main {
 		bezoeker.start();
 		Student student = new Student(true);
 		student.start();
-		Bar bar = new Bar();
-		bar.start();
+	//	Bar bar = new Bar();
+	//	bar.start();
 		Medewerker medewerker = new Medewerker("Egebert","Willemsen", 55);
 		medewerker.start();
 		Voedsel voedsel = new Voedsel();
@@ -20,7 +20,7 @@ public class Main {
 		EvenementPlanner evenementPlanner = new EvenementPlanner();
 		evenementPlanner.start();
 
-		bar.takeOrder(student);
+	//	bar.takeOrder(student);
 		System.out.println("================");
 		evenementPlanner.startTopiConf();
 	}
