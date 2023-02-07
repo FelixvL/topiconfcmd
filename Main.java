@@ -1,4 +1,4 @@
-package Topiconfcmd;
+package topiconfcmd;
 
 public class Main {
 	public static void main(String[] args) {
