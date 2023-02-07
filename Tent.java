@@ -6,6 +6,7 @@ public class Tent {
 	public String name;
 	public Bar bar; 
 	Voedsel voedselTent = new Voedsel();
+	Bezoeker bezoekTent = new Bezoeker();
 	
 	
 	public void start() {
@@ -23,6 +24,8 @@ public class Tent {
 			Medewerker werker3 = new Medewerker("Claudia", "van der Meijden", 32);
 			bar = new Bar(werker1, werker2, werker3);
 			System.out.println("Bar is geopend");
+			
+			bezoekTent.startTopiConf();
 		}
 	}
 
