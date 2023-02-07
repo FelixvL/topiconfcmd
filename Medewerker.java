@@ -48,7 +48,6 @@ public class Medewerker {
 		
 		public void start() {
 			System.out.println("Medewerker " + naam + achternaam + "Is klaar om te beginnen met werken.");
-			tentOpenen();
 		}
 		
 		public void inklokken() {
