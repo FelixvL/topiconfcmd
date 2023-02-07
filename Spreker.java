@@ -8,6 +8,12 @@ public class Spreker {
 	void start(){
 		System.out.println("Spreker start() is aangeroepen.");
 		test();
+		Voedsel macaroni = new Voedsel();
+		macaroni.eetVoedsel();
+	}
+	
+	void vult() {
+		System.out.println("\nSpreker heeft gegeten en zijn maag is nu gevuld.\n");
 	}
 	
 	void test() {
