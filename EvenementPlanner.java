@@ -16,7 +16,7 @@ public class EvenementPlanner
 	
 	public void openingsTijden()
 	{
-		System.out.printf("We gaan open om %f, en sluiten om %f%n", openingTijd, dichtTijd);
+		System.out.printf("We gaan open om %d, en sluiten om %d%n", openingTijd, dichtTijd);
 	}
 	
 	
