@@ -91,6 +91,7 @@ public class Medewerker {
 		
 		public void tentOpenen() {
 			System.out.println("De tijd breekt aan....het moment is daar. Iedereen klaar, tenten maar.");
-			Tent.setOpen(true);
+			Tent tent = new Tent();
+			tent.setOpen(true);
 		}
 }
