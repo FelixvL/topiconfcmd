@@ -21,6 +21,6 @@ public class Tent {
 	
 	public void tentIsIngezakt() {
 		Medewerker.setHelpEenIngezakteTent(true);
-			System.out.println(name + "is ingezakt");
+			System.out.println(name + " is ingezakt");
 	}
 }
