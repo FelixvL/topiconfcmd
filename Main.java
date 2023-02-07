@@ -21,6 +21,7 @@ public class Main {
 		evenementPlanner.start();
 
 		bar.takeOrder(student);
+		System.out.println("================");
 
 	}
 }
