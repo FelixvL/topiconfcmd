@@ -6,7 +6,16 @@ public class Medewerker {
 		public String leeftijd;
 		public boolean heeftVakantie;
 		public String afdeling;
+		public boolean helpEenIngezakteTent = false;
 		
+		public boolean isHelpEenIngezakteTent() {
+			return helpEenIngezakteTent;
+		}
+
+		public void setHelpEenIngezakteTent(boolean helpEenIngezakteTent) {
+			this.helpEenIngezakteTent = helpEenIngezakteTent;
+		}
+
 		public String getNaam() {
 			return naam;
 		}
@@ -49,6 +58,7 @@ public class Medewerker {
 
 		public void start() {
 			System.out.println("Medewerker " + naam + achternaam + "Is klaar om te beginnen met werken.");
+			tentOpenen();
 		}
 		
 		public void inklokken() {
@@ -79,4 +89,8 @@ public class Medewerker {
 			System.out.println("Ruimt het evenement op");
 		}
 		
+		public void tentOpenen() {
+			System.out.println("De tijd breekt aan....het moment is daar. Iedereen klaar, tenten maar.");
+			Tent.setOpen(true);
+		}
 }
