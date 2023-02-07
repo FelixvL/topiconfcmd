@@ -3,10 +3,11 @@ import java.util.*;
 
 public class Voedsel {
 	Spreker s = new Spreker();
+	Scanner sc = new Scanner(System.in);
 	
-	String v1 = "lasagne";
-	String v2 = "macaroni";
-	String v3 = "Stampot";
+	String v1 = "Hamburger";
+	String v2 = "zalm";
+	String v3 = "salade";
 
 	int am1 = 3;
 	int am2 = 2;
@@ -14,16 +15,31 @@ public class Voedsel {
 	
 	void start() {
 		opwarmen();
-		System.out.println("Dit is het voedsel wat wij hebben:");
-		System.out.println("1. "+v1+ " dit kost "+ am1+" munten");
-		System.out.println("2. "+v2+ " dit kost "+ am2+" munten");
-		System.out.println("3. "+v3+ " dit kost "+ am3+" munten");
+		System.out.println("start");
 		s.vult();
 	}
 	void opwarmen() {
 		System.out.println("het eten wordt opgewarmt");
 	}
 	void eetVoedsel() {
-		System.out.println("spreker glenn the man eet zijn macaroni");
+		System.out.println("spreker glenn the man eet zijn vis");
+	}
+	void voedselWeergeven() {
+		
+		System.out.println("het buffet is geopend, dit is waar je uit kunt kiezen:");
+		System.out.println("1. "+v1);
+		System.out.println("2. "+v2);
+		System.out.println("3. "+v3);
+		System.out.println("maak een keuze");
+		int keuze = sc.nextInt();
+		switch (keuze){
+		case 1 :System.out.println("u koos een hamburger");
+				break;
+		case 2 :System.out.println("u koos een zalmpje");
+				break;
+		case 3 :System.out.println("u koos een salade");
+				break;
+			
+		}
 	}
 }
