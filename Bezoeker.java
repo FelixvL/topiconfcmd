@@ -1,5 +1,5 @@
 package topiconfcmd;
-
+import java.util.Scanner;
 
 public class Bezoeker {
     private String naam;
@@ -24,7 +24,31 @@ public class Bezoeker {
         System.out.println("Welkom bezoekers!");
         
         new EvenementPlanner().openingsTijden();
+        
+        vondUhetLeuk topiConf = new vondUhetLeuk();
+        topiConf.startTopiConf();
+    }
+
+	
+		
+	}
+
+// vondUhetLeuk v = new vondUhetLeuk();
+// v.startTopiConf(); 
+
+class vondUhetLeuk  {
+    public void startTopiConf() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Vond u het bezoek leuk? (ja/nee): ");
+        String mening = sc.nextLine();
+
+        if (mening.equalsIgnoreCase("ja")) {
+            System.out.println("Geweldig, blij dat u het bezoek leuk vond!");
+        } else if (mening.equalsIgnoreCase("nee")) {
+            System.out.println("Jammer, hopelijk heeft u toch wat aan uw bezoek gehad.");
+        } else {
+            System.out.println("Ongeldige invoer. Probeer het opnieuw.");
+        }
     }
 }
-
 

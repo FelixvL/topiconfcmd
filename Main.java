@@ -9,6 +9,7 @@ public class Main {
 		spreker.start();
 		Bezoeker bezoeker = new Bezoeker();
 		bezoeker.start();
+		bezoeker.startTopiConf(;)
 		Student student = new Student();
 		student.start();
 		Bar bar = new Bar();
@@ -19,5 +20,6 @@ public class Main {
 		voedsel.start();
 		EvenementPlanner evenementPlanner = new EvenementPlanner();
 		evenementPlanner.start();
+	
 	}
 }
