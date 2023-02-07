@@ -9,17 +9,19 @@ public class Main {
 		spreker.start();
 		Bezoeker bezoeker = new Bezoeker();
 		bezoeker.start();
-		bezoeker.startTopiConf(;)
-		Student student = new Student();
+		Student student = new Student(true);
 		student.start();
 		Bar bar = new Bar();
 		bar.start();
-		Medewerker medewerker = new Medewerker();
+		Medewerker medewerker = new Medewerker("Egebert","Willemsen", 55);
 		medewerker.start();
 		Voedsel voedsel = new Voedsel();
 		voedsel.start();
 		EvenementPlanner evenementPlanner = new EvenementPlanner();
 		evenementPlanner.start();
-	
+
+		bar.takeOrder(student);
+		System.out.println("================");
+		evenementPlanner.startTopiConf();
 	}
 }

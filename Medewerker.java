@@ -1,35 +1,43 @@
 package topiconfcmd;
+import java.util.Scanner;
 
 public class Medewerker {
 		public String naam;
 		public String achternaam;
-		public String leeftijd;
-		public boolean heeftVakantie;
-		public String afdeling;
+		public int leeftijd;
+		public double uurloon = 14.50;
+		public boolean heeftVakantie = false;
+		public boolean helpEenIngezakteTent = false;
 		
+		Medewerker(){
+			this.naam = "John";
+			this.achternaam = "Doe";
+			this.leeftijd = 28;
+		}
 		
-		public String getNaam() {
-			return naam;
+		Medewerker(String naam, String achternaam, int leeftijd) {
+			this.naam = naam;
+			this.achternaam = achternaam;
+			this.leeftijd = leeftijd;
+		}
+		public boolean isHelpEenIngezakteTent() {
+			return helpEenIngezakteTent;
 		}
 
-		public void setNaam(String naam) {
-			this.naam = naam;
+		public void setHelpEenIngezakteTent(boolean helpEenIngezakteTent) {
+			this.helpEenIngezakteTent = helpEenIngezakteTent;
+		}
+
+		public String getNaam() {
+			return naam;
 		}
 
 		public String getAchternaam() {
 			return achternaam;
 		}
 
-		public void setAchternaam(String achternaam) {
-			this.achternaam = achternaam;
-		}
-
-		public String getLeeftijd() {
+		public int getLeeftijd() {
 			return leeftijd;
-		}
-
-		public void setLeeftijd(String leeftijd) {
-			this.leeftijd = leeftijd;
 		}
 
 		public boolean isHeeftVakantie() {
@@ -39,15 +47,11 @@ public class Medewerker {
 		public void setHeeftVakantie(boolean heeftVakantie) {
 			this.heeftVakantie = heeftVakantie;
 		}
-
-		public String getAfdeling() {
-			return afdeling;
+		
+		public double getUurloon() {
+			return uurloon;
 		}
-
-		public void setAfdeling(String afdeling) {
-			this.afdeling = afdeling;
-		}
-
+		
 		public void start() {
 			System.out.println("Medewerker " + naam + achternaam + "Is klaar om te beginnen met werken.");
 		}
@@ -80,4 +84,10 @@ public class Medewerker {
 			System.out.println("Ruimt het evenement op");
 		}
 		
+		public void tentOpenen(String naam) {
+			System.out.println("De tijd breekt aan....het moment is daar. Iedereen klaar, tenten maar.");
+			Tent tent = new Tent();
+			tent.name = naam;
+			tent.setOpen(true);
+		}
 }
