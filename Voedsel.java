@@ -5,8 +5,7 @@ public class Voedsel {
 	String v1 = "lasagne";
 	String v2 = "macaroni";
 	String v3 = "Stampot";
-	
-	
+
 	int am1 = 3;
 	int am2 = 2;
 	int am3 = 1;

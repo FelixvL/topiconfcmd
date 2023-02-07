@@ -7,7 +7,6 @@ public class Medewerker {
 		public boolean heeftVakantie;
 		public String afdeling;
 		
-		
 		public String getNaam() {
 			return naam;
 		}
