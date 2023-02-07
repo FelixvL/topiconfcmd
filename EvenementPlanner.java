@@ -10,7 +10,7 @@ public class EvenementPlanner
 	{
 		System.out.println("De evenement planner komt op het werk.");
 		
-		new Bezoeker.bezoekersInfo();
+		new Bezoeker().bezoekersInfo();
 	}
 	
 	
