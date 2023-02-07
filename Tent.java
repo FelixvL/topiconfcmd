@@ -25,7 +25,7 @@ public class Tent {
 			bar = new Bar(werker1, werker2, werker3);
 			System.out.println("Bar is geopend");
 			
-			bezoekTent.startTopiConf();
+			new vondUhetLeuk().startTopiConf();
 		}
 	}
 
