@@ -1,16 +1,34 @@
 package topiconfcmd;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Bar {
     private StringBuilder keuzeMenu = new StringBuilder();
-    private String beer;
+    private Scanner sc = new Scanner(System.in);
+    private final double bierPrice = 2.50;
+    private Student student = new Student();
+    private ArrayList<Student> studentsAtTheBarArray = student.getAFriendGroup();
+
+
+        public Bar(Medewerker medewerker1, Medewerker medewerker2, Medewerker medewerker3) {
+            System.out.println("Hoi " + medewerker1.getNaam() + " fijn dat je komt helpen?");
+            System.out.println("Heei " + medewerker2.getNaam() + " goed dat je er bent, we wachten nu nog op 1 collega");
+            System.out.println("Aha, daar zul je " + medewerker3.getNaam() + medewerker3.getAchternaam() + " Hebben");
+
+            System.out.println("Maar voordat we de bar openen, wat verdienen jullie eigenlijk?");
+            System.out.println("Wat verdien jij " + medewerker1.getNaam() + " ?");
+            System.out.println(medewerker1.getUurloon() + " ? " + " Aha, en jij " + medewerker2.getNaam() + " ?");
+            System.out.println(medewerker2.getUurloon() + " ? " + " Allebei hetzelfde als ik." + " en jij " +medewerker3.getNaam());
+            System.out.println(medewerker3.getUurloon() + " ? " + " Nou daar zit dus geen verschil tussen");
+            System.out.println("Laten we iets gaan doen.");
+        }
 
     public double getBierPrice() {
         return bierPrice;
     }
 
-    private final double bierPrice = 2.50;
+
 
     public void start() {
         this.keuzeMenu();
