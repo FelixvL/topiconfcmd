@@ -1,13 +1,21 @@
 package topiconfcmd;
 
 public class Medewerker {
-		public String naam;
-		public String achternaam;
-		public String leeftijd;
+		public String naam = "Egbert";
+		public String achternaam = "Willemsen";
+		public int leeftijd = 55;
 		public boolean heeftVakantie;
 		public String afdeling;
+		public boolean helpEenIngezakteTent = false;
 		
-		
+		public boolean isHelpEenIngezakteTent() {
+			return helpEenIngezakteTent;
+		}
+
+		public void setHelpEenIngezakteTent(boolean helpEenIngezakteTent) {
+			this.helpEenIngezakteTent = helpEenIngezakteTent;
+		}
+
 		public String getNaam() {
 			return naam;
 		}
@@ -24,11 +32,11 @@ public class Medewerker {
 			this.achternaam = achternaam;
 		}
 
-		public String getLeeftijd() {
+		public int getLeeftijd() {
 			return leeftijd;
 		}
 
-		public void setLeeftijd(String leeftijd) {
+		public void setLeeftijd(int leeftijd) {
 			this.leeftijd = leeftijd;
 		}
 
@@ -50,6 +58,7 @@ public class Medewerker {
 
 		public void start() {
 			System.out.println("Medewerker " + naam + achternaam + "Is klaar om te beginnen met werken.");
+			tentOpenen();
 		}
 		
 		public void inklokken() {
@@ -80,4 +89,8 @@ public class Medewerker {
 			System.out.println("Ruimt het evenement op");
 		}
 		
+		public void tentOpenen() {
+			System.out.println("De tijd breekt aan....het moment is daar. Iedereen klaar, tenten maar.");
+			Tent.setOpen(true);
+		}
 }
